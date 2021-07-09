@@ -1,7 +1,7 @@
  
 <html>
   <head>
-    <title>Image recognition</title>
+    <title>Plastic Number Recognizer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,22 +17,26 @@
   <div class="container">
     
     <center>
-      <h3 class="btn btn-default heading">IMAGE RECONGNITION</h3>
+      <h3 class="btn btn-default heading">Plastic Number Recognizer</h3>
 
       <br><br>
 
-      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <p style="font-size: 22px;">Model is trained to identify the following plastic numbers: </p>
 
       <b class="name_of_objects">
-        Water Bottle
+        Plastic 1
         <hr>
-        Clock
+        Plastic 2
         <hr>
-        Book
+        Plastic 3
         <hr>
-        Measuring Tablespoon
+        Plastic 4
         <hr>
-        Electric Pencil Sharpener
+        Plastic 5
+        <hr>
+        Plastic 6
+        <hr>
+        Plastic 7
         <hr>
       </b>
 
@@ -43,12 +47,13 @@
       <br><br>
       <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
       <br><br>
-      <button onclick="check();" class="btn btn-success">Identify Image</button>
+      <button onclick="check();" class="btn btn-success">Identify Plastic number</button>
       <br><br>
 
 
-      <p style="font-size: 22px;">Object :<span id="result_object_name"></span></p>
+      <p style="font-size: 22px;">Number: <span id="result_object_name"></span></p>
       <p style="font-size: 22px;">Accuracy :<span id="result_object_accuracy"></span></p>
+      <p style="font-size: 22px;">Recycling Center :<span id="result_object_place"></span></p>
     </center>
 
   </div>
